@@ -1,13 +1,216 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body,html {
+ margin: 0;
+ padding: 0;
+ overflow-x: hidden;
+ background-image: url(https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/997070/6704338131eac5f8ab62a23153e5d5c8712393b1.jpg);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.wrapper {
+  width: 75%;
+  margin: 0 auto;
+}
+header {
+background-color: rgb(116, 10, 10);
+padding-left: 10px;
+font-size: 40px;
+}
+
+.left {
+  float: left;
+  width: 70%;
+  padding-top: 15px;
+}
+
+.right {
+  float: right;
+  width: 30%;
+}
+
+.team-card {
+  margin-top: 20px;
+  width: 100%;
+  height: 80px;
+  background-color: rgba(160, 160, 160, 0.699);
+  border: 1px solid black;
+  color: white;
+  display: flex;
+}
+
+.team-card p {
+  text-align: center;
+  padding-top: 15px;
+  padding-left: 50px;
+}
+
+.team-img {
+  width: 100px;
+  height: 100%;
+  background-color: royalblue;
+  position: relative;
+}
+
+.delete {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.team-img:hover .delete {
+display: block;
+}
+
+.team-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  margin-top: 25px;
+}
+
+.card {
+  display: inline-block;
+  border-radius: 3%;
+  width: 30%;
+  height: 300px;
+  margin: 10px 20px 10px 0;
+  background-color: rgba(160, 160, 160, 0.301);
+}
+
+.card:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.hero-img {
+margin: 0 auto;
+width: 60%;
+height: 150px;
+}
+
+.hero-img img {
+  width: 100%;
+  height: 100%;
+
+}
+
+.info {
+  background-color: rgba(160, 160, 160, 0.301);
+  margin-top: 20px;
+  padding-left: 20px;
+  color: white;
+}
+
+.card p {
+  text-align: center;
+  color: white;
+}
+
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.buttons button {
+  width: 70px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+.info-hero {
+  height: 100vh;
+}
+.info-img {
+width: 60%;
+height: 500px;
+cursor: pointer;
+}
+
+.full-img {
+width: 100vw;
+height: 100vh;
+cursor: pointer;
+}
+
+.info-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.full-img img {
+  position: absolute;
+  width: 75vw;
+  height: 100vh;
+  margin: 0 auto;
+
+  }
+
+.comic-img {
+    margin: 20px;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+  }
+.comic-img img{
+    width: 100%;
+    height: 100%;
+   
+  }
+
+form button {
+   height: 40px;
+  }
+
+input {
+    height: 40px;
+    width: 38%;
+  }
+
+
+@media only screen and (max-width:950px) {
+
+  .card {
+    width: 40%;
+  }
+  .info-img {
+    width: 100%;
+    padding-right: 15px;
+    }
+    input {
+      width: 80%;
+    }
+
+    .info {
+     width: 100%;
+     padding: 0;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+  .card {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .left {
+    width: 100%;
+  }
+  .right {
+    width: 100%;
+    padding-bottom: 15px;
+  }
 }
