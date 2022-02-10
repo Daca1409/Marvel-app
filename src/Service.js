@@ -1,7 +1,4 @@
-const api = 'http://gateway.marvel.com/v1/public/characters?ts=1&apikey=3eec03e68cfb3b6f845fd2e32f2a66d2&hash=2ac7be16fabde41da28d7b8f07843306';
-
-// const public_key = '3eec03e68cfb3b6f845fd2e32f2a66d2';
-// const private_key = '0a8d8f9acf667e1d5ff5f1901a7b7c564ba41e5c'
+const api = 'https://gateway.marvel.com/v1/public/characters?ts=1&apikey=3eec03e68cfb3b6f845fd2e32f2a66d2&hash=2ac7be16fabde41da28d7b8f07843306';
 
 export const fetchData = (setData) => {
     fetch(`${api}`)

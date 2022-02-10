@@ -7,6 +7,5 @@ export const Heroes = ({ search, team, setTeam, data }) => {
         {filteredHeroes(data, search).map(hero =>
             <Hero key={hero.id} hero={hero} team={team} setTeam={setTeam} data={data} ></Hero>
         )}
-
     </div>;
 };
