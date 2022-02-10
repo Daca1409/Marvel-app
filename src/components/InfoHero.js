@@ -19,7 +19,6 @@ export const InfoHero = ({ data }) => {
             .then(response => response.json())
             .then((data) => {
                 setComic(data.data.results)
-                console.log(data.data.results)
             });
     }, [id]);
 
