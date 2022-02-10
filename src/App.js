@@ -17,7 +17,7 @@ function App() {
 
   useEffect(() => {
     fetchData(setData)
-  }, [data]);
+  }, []);
 
 
   return (
