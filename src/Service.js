@@ -19,9 +19,13 @@ export const searchPattern = (string, search) => {
 }
 
 export const showresults = (result, search) => {
-    if (searchPattern(result.name, search)) {
-        return true
-    }
+    if (search === "") {
+        return result
+
+    } else
+        if (searchPattern(result.name, search)) {
+            return true
+        }
 }
 
 export const filteredHeroes = (result, search) => {
