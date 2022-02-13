@@ -16,7 +16,6 @@ export const Search = ({ search, setSearch }) => {
                     value={search}
                     onChange={showSearch}
                 />
-                <button type="submit">Go</button>
             </form>
         </div>
 

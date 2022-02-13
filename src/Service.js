@@ -28,6 +28,8 @@ export const showresults = (result, search) => {
 export const filteredHeroes = (result, search) => {
     return result.filter((result) => showresults(result, search))
 
+
+
 }
 
 

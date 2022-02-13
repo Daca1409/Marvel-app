@@ -205,6 +205,8 @@ input {
     }
     .delete {
       display: block;
+     left: 100%;
+
     }
 }
 

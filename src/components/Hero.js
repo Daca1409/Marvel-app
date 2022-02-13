@@ -2,11 +2,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import { addToMyTeam } from '../Service';
 
-
-
 export const Hero = ({ hero, team, setTeam, data }) => {
-
-
 
     return <>
         <div className='card'>
